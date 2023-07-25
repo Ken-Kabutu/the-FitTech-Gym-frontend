@@ -35,7 +35,7 @@ const Footer = () => {
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle>About Us</FooterLinkTitle>
-                            <FooterLink to='/'>Carrers</FooterLink>
+                            <FooterLink to='/'>Careers</FooterLink>
                             <FooterLink to='/'>Franchises</FooterLink>
                             <FooterLink to='/'>Investors</FooterLink>
                             <FooterLink to='/'>Privacy Policy</FooterLink>
@@ -51,9 +51,9 @@ const Footer = () => {
                 <SocialMedia>
                     <SocialMediaWrap>
                         <SocialLogo to='/' onClick={toggleHome}>
-                            GymTech
+                            The FitTech Gym
                         </SocialLogo>
-                        <WebsiteRights> GymTech © {new Date().getFullYear()}
+                        <WebsiteRights> The FitTech Gym © {new Date().getFullYear()}
                              | All rigths reserved</WebsiteRights>
 
                         <SocialIcons>
