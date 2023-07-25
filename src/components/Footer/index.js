@@ -67,12 +67,12 @@ const Footer = () => {
                                 <FaInstagram />
                             </SocialIconLink>
 
-                            <SocialIconLink href="//www.youtube.com/channel/UCBIRxu3dixMNMRVjz-YQAcA" target="_blank"
+                            <SocialIconLink href="https://www.youtube.com/MoringaSchoolVideos/videos" target="_blank"
                                 aria-label="Youtube">
                                 <FaYoutube />
                             </SocialIconLink>
 
-                            <SocialIconLink href="//twitter.com/resilia_br" target="_blank"
+                            <SocialIconLink href="https://twitter.com/moringaschool" target="_blank"
                                 aria-label="Twitter">
                                 <FaTwitter />
                             </SocialIconLink>
