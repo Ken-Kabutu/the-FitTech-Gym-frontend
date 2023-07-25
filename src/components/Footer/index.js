@@ -57,7 +57,7 @@ const Footer = () => {
                              | All rigths reserved</WebsiteRights>
 
                         <SocialIcons>
-                            <SocialIconLink href="//www.facebook.com/resilia.br/" target="_blank"
+                            <SocialIconLink href="https://www.facebook.com/moringaschool/" target="_blank"
                                 aria-label="Facebook">
                                 <FaFacebook />
                             </SocialIconLink>
@@ -77,7 +77,7 @@ const Footer = () => {
                                 <FaTwitter />
                             </SocialIconLink>
 
-                            <SocialIconLink href="//www.linkedin.com/company/resilia-educa%C3%A7%C3%A3o/" target="_blank"
+                            <SocialIconLink href="https://www.linkedin.com/school/moringa-school/" target="_blank"
                                 aria-label="Linkedin">
                                 <FaLinkedin />
                             </SocialIconLink>
