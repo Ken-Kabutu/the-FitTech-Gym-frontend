@@ -21,7 +21,7 @@ const HeroSection = () => {
 
 
     return (
-        // conferir se é isso
+        
         <HeroContainer id='contact'> 
             <HeroBg>
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
@@ -35,7 +35,7 @@ const HeroSection = () => {
                     <Button to='./contact' onMouseEnter={onHover} onMouseLeave={onHover}
                         primary='true'
                         dark='true'
-                        // se continuar como contato pode apagar o que está embaixo
+                        
                         smooth={true}
                         duration={500}
                         spy={true}
