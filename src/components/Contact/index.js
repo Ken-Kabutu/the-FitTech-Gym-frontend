@@ -1,115 +1,43 @@
-import React from 'react'
-import FotoLarissa from '../../images/larissa.jpg'
-import FotoNathalie from '../../images/nathalie.jpg'
-import FotoMurilo from '../../images/murilo.jpg'
-import FotoYasmin from '../../images/yasmin.jpg'
-
-
+import React from 'react';
+import KennethKabutuImage from '../../images/kenneth.jpeg';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import {
-    FaLinkedin,
-    FaGithub
-}
-    from 'react-icons/fa';
-import {
-    Container,
-    ContactWrap,
-    ContactContainer,
-    ContactCard,
-    ContactPhoto,
-    ContactH2,
-    SocialContactContainer,
-    SocialMediaLink,
-    ContactH1
-   
-} from '././ContactElements'
-
+  Container,
+  ContactWrap,
+  ContactContainer,
+  ContactCard,
+  ContactPhoto,
+  ContactH2,
+  SocialContactContainer,
+  SocialMediaLink,
+  ContactH1
+} from './ContactElements';
 
 const Contact = () => {
-    return (
-        <>
-            <Container>
-                <ContactWrap>
+  return (
+    <>
+      <Container>
+        <ContactWrap>
+          <ContactH1>Contact Person</ContactH1>
+          <ContactContainer>
+            <ContactCard>
+              <ContactPhoto src={KennethKabutuImage} />
+              <ContactH2>Kenneth Wachira</ContactH2>
 
-            <ContactH1>Meet the team</ContactH1>
-
-                    <ContactContainer>
-                        
-                    <ContactCard>
-                    <ContactPhoto src={FotoLarissa} />
-                    <ContactH2>Larissa Silva</ContactH2>
-
-                    <SocialContactContainer>
-                    <SocialMediaLink href="https://www.linkedin.com/school/moringa-school/" target="_blank"
-                                aria-label="Linkedin">
-                                <FaLinkedin />
-                            </SocialMediaLink>
-
-                            <SocialMediaLink href="https://github.com/Ken-Kabutu" target="_blank"
-                                aria-label="GitHub">
-                                <FaGithub />
-                            </SocialMediaLink>
-                    </SocialContactContainer>
-                </ContactCard>
-
-                <ContactCard>
-                    <ContactPhoto src={FotoMurilo} />
-                    <ContactH2>Murilo Mininel</ContactH2>
-
-                    <SocialContactContainer>
-                    <SocialMediaLink href="https://www.linkedin.com/in/murilo-rodrigues-259011212/" target="_blank"
-                                aria-label="Linkedin">
-                                <FaLinkedin />
-                            </SocialMediaLink>
-
-                            <SocialMediaLink href="https://github.com/muridev017" target="_blank"
-                                aria-label="GitHub">
-                                <FaGithub />
-                            </SocialMediaLink>
-                    </SocialContactContainer>
-                </ContactCard>
-
-                <ContactCard>
-                    <ContactPhoto src={FotoNathalie} />
-                    <ContactH2>Nathalie Moreira</ContactH2>
-
-                    <SocialContactContainer>
-                    <SocialMediaLink href="https://www.linkedin.com/in/nathalie-moreira/" target="_blank"
-                                aria-label="Linkedin">
-                                <FaLinkedin />
-                            </SocialMediaLink>
-
-                            <SocialMediaLink href="https://github.com/NathalieMS" target="_blank"
-                                aria-label="GitHub">
-                                <FaGithub />
-                            </SocialMediaLink>
-                    </SocialContactContainer>
-                </ContactCard>
-
-                <ContactCard>
-                    <ContactPhoto src={FotoYasmin} />
-                    <ContactH2>Yasmin Reis</ContactH2>
-
-                    <SocialContactContainer>
-                    <SocialMediaLink href="https://www.linkedin.com/in/yasminreisk/" target="_blank"
-                                aria-label="Linkedin">
-                                <FaLinkedin />
-                            </SocialMediaLink>
-
-                            <SocialMediaLink href="https://github.com/yasminreisk" target="_blank"
-                                aria-label="GitHub">
-                                <FaGithub />
-                            </SocialMediaLink>
-                    </SocialContactContainer>
-                </ContactCard>
-
-
-
-                    </ContactContainer>
-
-                </ContactWrap>
-            </Container>
-        </>
-    )
-}
+              <SocialContactContainer>
+                <SocialMediaLink href="https://www.linkedin.com/school/moringa-school/" target="_blank" aria-label="LinkedIn">
+                  <FaLinkedin />
+                </SocialMediaLink>
+                <SocialMediaLink href="https://github.com/Ken-Kabutu" target="_blank" aria-label="GitHub">
+                  <FaGithub />
+                </SocialMediaLink>
+              </SocialContactContainer>
+            </ContactCard>
+          </ContactContainer>
+        </ContactWrap>
+      </Container>
+    </>
+  );
+};
 
 export default Contact;
