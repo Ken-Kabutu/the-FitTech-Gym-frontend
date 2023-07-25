@@ -39,12 +39,12 @@ const Contact = () => {
                     <ContactH2>Larissa Silva</ContactH2>
 
                     <SocialContactContainer>
-                    <SocialMediaLink href="https://www.linkedin.com/in/larissa-silva-773228100/" target="_blank"
+                    <SocialMediaLink href="https://www.linkedin.com/school/moringa-school/" target="_blank"
                                 aria-label="Linkedin">
                                 <FaLinkedin />
                             </SocialMediaLink>
 
-                            <SocialMediaLink href="https://github.com/LariCostaSilva/" target="_blank"
+                            <SocialMediaLink href="https://github.com/Ken-Kabutu" target="_blank"
                                 aria-label="GitHub">
                                 <FaGithub />
                             </SocialMediaLink>
