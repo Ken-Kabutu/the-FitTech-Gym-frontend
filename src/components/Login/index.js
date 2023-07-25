@@ -17,7 +17,7 @@ const LogIn = () => {
         <>
             <Container>
                 <FormWrap>
-                    <Icon to='/'>GymTech</Icon>
+                    <Icon to='/'>The FitTech Gym</Icon>
                     <FormContent>
                         <Form action='register'>
                             <FormH1>Restricted Area</FormH1>

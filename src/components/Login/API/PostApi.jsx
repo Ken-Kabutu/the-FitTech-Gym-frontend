@@ -49,7 +49,7 @@ function PostApi() {
 
   return (<Container>
     <FormWrap>
-      <Icon to='/'>GymTech</Icon>
+      <Icon to='/'>The FitTech Gym</Icon>
       <FormContent>
 
         <Form onSubmit={Alunos}>
