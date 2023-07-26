@@ -23,6 +23,7 @@ FitTech Gym Management System offers a user-friendly interface for gym members a
 1. User Registration and Login: New users can register with their email and password. Existing users can log in to access their accounts.
 2. Membership Plans: Users can view different membership plans offered by the gym and choose the one that suits them.
 3. Posts and Updates: Staff can create and publish informative posts and updates related to fitness and health.
+4. User Management: Staff can manage user data, including updating user information and deleting user accounts.
 
 ### `npm run build`
 
