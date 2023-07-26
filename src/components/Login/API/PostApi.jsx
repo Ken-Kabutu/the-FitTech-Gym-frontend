@@ -120,9 +120,37 @@ function PostApi() {
               onChange={(e) => setLoginData({ ...loginData, password: e.target.value })}
             />
             <FormButton onClick={handleLogin}>Login</FormButton>
-          </Form>
+        </Form>
 
-          
+          {/* Registration Form */}
+        <Form onSubmit={handleRegistration}>
+            <FormLabel>Name:</FormLabel>
+            <FormInput
+              type='text'
+              name='name'
+              value={registrationData.name}
+              onChange={(e) => setRegistrationData({ ...registrationData, name: e.target.value })}
+            />
+            <FormLabel>Email:</FormLabel>
+            <FormInput
+              type='email'
+              name='email'
+              value={registrationData.email}
+              onChange={(e) => setRegistrationData({ ...registrationData, email: e.target.value })}
+            />
+            <FormLabel>Password:</FormLabel>
+            <FormInput
+              type='password'
+              name='password'
+              value={registrationData.password}
+              onChange={(e) =>
+                setRegistrationData({ ...registrationData, password: e.target.value })
+              }
+            />
+            <FormButton onClick={handleRegistration}>Register</FormButton>
+        </Form>
+
+
         <Form onSubmit={handlePost}>
           <FormLabel>Title</FormLabel>
           <FormInput type="text" name="title" onChange={handleInputChange} />
