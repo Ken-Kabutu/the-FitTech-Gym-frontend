@@ -8,7 +8,7 @@ FitTech Gym management system is a modern fitness application that combines tech
 * User authentication and login system.
 * User-friendly interface for easy navigation and interaction.
 
-### `npm start`
+### Installation
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
