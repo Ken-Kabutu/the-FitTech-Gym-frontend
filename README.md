@@ -52,6 +52,8 @@ Future plans for the FitTech Gym Management System include:
 
 3. Community and Social Features: Adding social features for users to connect, share fitness progress, and participate in challenges.
 
+4. Multi-Language Support: Offering support for multiple languages to cater to a diverse user base.
+
 ## Dependências Gerais:
 ```js
  "dependencies": {
