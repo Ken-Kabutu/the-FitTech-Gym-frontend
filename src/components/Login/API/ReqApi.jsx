@@ -28,7 +28,7 @@ function ReqApi() {
     fetchmemberships();
   }, []);
 
-  const fetchmemberships = () => {
+  const fetchMemberships = () => {
     Axios.get('http://localhost:9292/memberships')
     .then((response) => {
       setMemberships(response.data);
@@ -42,6 +42,19 @@ function ReqApi() {
 
   const handleEdit = (id) => {
     setEditingMembership(id);
+  };
+
+
+  const handleUpdate = (id) => {
+    const membershipToUpdate = memberships.find((membership) => membership.id === id);
+    Axios.put(`http://localhost:9292/memberships/${id}`, membershipToUpdate)
+      .then(() => {
+        setEditingMembership(null);
+        fetchMemberships();
+      })
+      .catch((error) => {
+        console.error('failed to update membership:', error);
+      });
   };
 
 
