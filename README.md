@@ -14,6 +14,7 @@ FitTech Gym management system is a modern fitness application that combines tech
 2. Navigate to the project directory with cd fittech-gym.
 3. Install the required dependencies with npm install.
 4. Start the development server with npm start.
+5. Access the application in your web browser at http://localhost:3000.
 
 ### `npm test`
 
