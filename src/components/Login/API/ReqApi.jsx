@@ -92,16 +92,19 @@ return (
                 onChange={(e) => handleEdit(membership.id)}
                 disabled={editingMembership !== membership.id}
               />
+              {editingMembership !== membership.id && (
               <EditButton onClick={() => handleEdit(membership.id)}>
                 <BsPencilSquare />
               </EditButton>
+              )}
             </FormEditInput> 
 
             //space to add other input fields
 
              <FormButton onClick={() => handleDelete(membership.id)}>Delete membership</FormButton>
+             {editingMembership === membership.id && (
              <FormButton onClick={() => handleUpdate(membership.id)}>Reset membership</FormButton>
-
+             )}
           </Form>
         ))
       )}
