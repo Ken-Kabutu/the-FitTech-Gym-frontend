@@ -31,6 +31,7 @@ FitTech Gym Management System offers a user-friendly interface for gym members a
 * Axios for making HTTP requests to the backend API.
 * Styled Components for styling the UI.
 * Ruby ActiveRecords with Sinatra for the backend API.
+* PostgreSQL for database management.
 
 # PROJETO FINAL: API Academia
 
