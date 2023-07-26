@@ -73,11 +73,12 @@ function PostApi() {
     Axios.post('http://localhost:3000/login', loginData)
       .then((response) => {
         console.log('Login success:', response.data);
-        // Handle successful login, e.g., set authentication state or redirect to dashboard
+        // Handle successful login
       })
       .catch((error) => {
         console.error('Login failed:', error);
-        // Handle login error, e.g., display an error message
+        // Handle login error
+        
       });
   };
 
