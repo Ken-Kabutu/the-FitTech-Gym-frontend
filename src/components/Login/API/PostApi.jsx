@@ -4,12 +4,14 @@ import {
   Container,
   FormWrap,
   Icon,
+  FormButton,
   FormContent,
+  FormEditInput,
   Form,
   FormInput,
   FormLabel,
-  FormButtonSearch,
-  LinkEdit
+  EditButton,
+  FormButtonSearch
 } from './StyledComponents'
 
 
