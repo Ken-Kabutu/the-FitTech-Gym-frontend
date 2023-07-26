@@ -19,13 +19,7 @@ import {
 function PostApi() {
 
   const [data, setData] = useState({
-    nome: '',
-    cpf: '',
-    endereco: '',
-    estado: '',
-    telefone: '',
-    email: '',
-    plano: ''
+  title: '',
   });
 
 
