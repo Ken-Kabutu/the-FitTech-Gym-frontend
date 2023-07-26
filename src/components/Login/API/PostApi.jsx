@@ -30,6 +30,13 @@ function PostApi() {
     password:'',
   });
 
+    // State for handling user registration
+    const [registrationData, setRegistrationData] = useState({
+      name: '',
+      email: '',
+      password: '',
+    });
+
  const handleInputChange = (e) => {
   const { name, value } = e.target;
   setData({
