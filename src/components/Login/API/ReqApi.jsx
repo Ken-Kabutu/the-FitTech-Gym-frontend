@@ -26,8 +26,20 @@ function ReqApi() {
   useEffect(() => {
     fetchmemberships();
   }, []);
-  
-}
+  const fetchmemberships = () => {
+    Axios.get('http://localhost:9292/memberships')
+    .then((response) => {
+      setMemberships(response.data);
+      setIsLoading(false);
+    })
+    .catch((error) => {
+      console.error('failed to fetch memberships:', error);
+      setIsLoading(false);
+    });
+  };
+
+  //space for implementing other CRUD operations
+
 
 
 return (
@@ -38,120 +50,20 @@ return (
  
     <FormContent>
 
-    <FormButtonSearch onClick={Alunos}>List all members:</FormButtonSearch>
-
-{ isLoading ?  alunos.map((aluno) => {
- 
-        return <>
-       <Form onSubmit={(e) => {
-         e.preventDefault()
-         PutApi(aluno.id)
-       }}>
-
-
-            <FormLabel>Name: </FormLabel>
-            <FormEditInput>
-            <FormInput type="text" name="nome"
-            placeholder={aluno.nome}
-            disabled={disabledNome}
-            onChange={handleChange}
-
-             />
-            <EditButton onClick={() => setDisabledNome(!disabledNome)}><BsPencilSquare /></EditButton>
-            </FormEditInput>
-         
-         
-          <FormLabel>Social Number: </FormLabel>
-          <FormEditInput>
-          <FormInput
-            type="text" name="cpf"
-            placeholder={aluno.cpf}
-            disabled={disabledCPF}
-            onChange={handleChange}
-            />
-          <EditButton onClick={() => setDisabledCPF(!disabledCPF)}><BsPencilSquare /></EditButton>
-            </FormEditInput>
-
-         
-          <FormLabel>Address: </FormLabel>
-          <FormEditInput>
-          <FormInput
-            type="text" name="endereco"
-            placeholder={aluno.endereco}
-            disabled={disabledEndereco}
-            onChange={handleChange}
-
-            />
-          <EditButton onClick={() => setDisabledEndereco(!disabledEndereco)}><BsPencilSquare /></EditButton>
-            </FormEditInput>
-         
-          <FormLabel>State:  </FormLabel>
-          <FormEditInput>
-          <FormInput
-            type="text" name="cidade"
-            placeholder={aluno.estado}
-            disabled={disabledEstado}
-            onChange={handleChange}
-
-            />
-          <EditButton onClick={() => setDisabledEstado(!disabledEstado)}><BsPencilSquare /></EditButton>
-            </FormEditInput>
-        
-         
-          <FormLabel>Phone: </FormLabel>
-          <FormEditInput>
-          <FormInput
-            type="text" name="telefone"
-            placeholder={aluno.telefone}
-            disabled={disabledTelefone}
-            onChange={handleChange}
-
-            />
-          <EditButton onClick={() => setDisabledTelefone(!disabledTelefone)}><BsPencilSquare /></EditButton>
-            </FormEditInput>
-         
-          <FormLabel>Email: </FormLabel>
-          <FormEditInput>
-          <FormInput
-            type="email" name="email"
-            placeholder={aluno.email}
-            disabled={disabledEmail}
-            onChange={handleChange}
-
-            />
-          <EditButton onClick={() => setDisabledEmail(!disabledEmail)}><BsPencilSquare /></EditButton>
-            </FormEditInput>
-        
-       
-          <FormLabel>Membership: </FormLabel>
-          <FormEditInput>
-          <FormInput
-            type="text" name="plano"
-            placeholder={aluno.plano}
-            disabled={disabledPlano}
-            onChange={handleChange}
-
-            />
-          <EditButton onClick={() => setDisabledPlano(!disabledPlano)}><BsPencilSquare /></EditButton>
-            </FormEditInput>
-         
-
-          <FormButton type='button' className='buttonCont' onClick={()=>DelApi(aluno.id)}>Delete member</FormButton>
-          <FormButton type='submit'>Reset member</FormButton>
-
-          </Form>
-          </>
+      <FormButtonSearch onClick={fetchmemberships}>List all memberships:</FormButtonSearch>
+      {isLoading ? (
+        <Loading />
+      ) : (
+        memberships.map
+      )
       
-      }) : <Loading /> 
 
-
-}
-      <Link to='/post'><FormButtonSearch>Register</FormButtonSearch></Link>
-      </FormContent>
+    </FormContent>
   </FormWrap>
   </Container>
 
   );
+}
     
  
 export default ReqApi;
