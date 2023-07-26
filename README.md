@@ -18,8 +18,7 @@ FitTech Gym management system is a modern fitness application that combines tech
 
 ## Usage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+FitTech Gym Management System offers a user-friendly interface for gym members and staff to access various features:
 
 ### `npm run build`
 
