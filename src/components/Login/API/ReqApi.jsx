@@ -65,7 +65,14 @@ return (
                 onChange={(e) => handleEdit(membership.id)}
                 disabled={/*set to true or false based on editing state*/}
               />
-            </FormEditInput>  
+              <EditButton onClick={() => handleEdit(membership.id)}>
+                <BsPencilSquare />
+              </EditButton>
+            </FormEditInput> 
+
+            //space to add other input fields
+            
+             
 
           </Form>
         ))
