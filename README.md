@@ -46,6 +46,8 @@ The backend API provides the following endpoints:
 
 Future plans for the FitTech Gym Management System include:
 
+1. Enhanced User Dashboard: Implementing a user dashboard with real-time fitness metrics and progress tracking.
+
 ## Dependências Gerais:
 ```js
  "dependencies": {
