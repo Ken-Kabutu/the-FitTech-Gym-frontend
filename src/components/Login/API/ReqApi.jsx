@@ -57,6 +57,16 @@ function ReqApi() {
       });
   };
 
+  const handleDelete = (id) => {
+    Axios.delete(`http://localhost:9292/memberships/${id}`)
+      .then(() => {
+        fetchMemberships();
+      })
+      .catch((error) => {
+        console.error('failed to delete membership:', error);
+      });
+  };
+
 
 
 return (
