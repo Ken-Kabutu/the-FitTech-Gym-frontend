@@ -50,6 +50,8 @@ Future plans for the FitTech Gym Management System include:
 
 2. Fitness Tracking Mobile App: Developing a companion mobile app for fitness tracking and personalized workout plans.
 
+3. Community and Social Features: Adding social features for users to connect, share fitness progress, and participate in challenges.
+
 ## Dependências Gerais:
 ```js
  "dependencies": {
