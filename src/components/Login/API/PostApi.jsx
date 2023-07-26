@@ -26,14 +26,13 @@ function PostApi() {
 
 
 
-  const Alunos = (e) => {
-    e.preventDefault()
-    fetch('https://api-academia-alunos.herokuapp.com/alunos', {
-      method: 'POST',
-      body: JSON.stringify(data),
-      headers: { 'Content-Type': 'application/json' }
-    }).then(x => x.json()).then(res => console.log(res))
-  }
+ const handleInputChange = (e) => {
+  const { name, value } = e.target;
+  setData({
+    ...data,
+    [name]: value,
+  });
+ };
 
 
 
