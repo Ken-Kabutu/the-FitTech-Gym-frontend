@@ -21,6 +21,7 @@ FitTech Gym management system is a modern fitness application that combines tech
 FitTech Gym Management System offers a user-friendly interface for gym members and staff to access various features:
 
 1. User Registration and Login: New users can register with their email and password. Existing users can log in to access their accounts.
+2. Membership Plans: Users can view different membership plans offered by the gym and choose the one that suits them.
 
 ### `npm run build`
 
