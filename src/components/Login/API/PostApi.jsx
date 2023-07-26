@@ -63,24 +63,11 @@ function PostApi() {
       <Icon to='/'>The FitTech Gym</Icon>
       <FormContent>
 
-        <Form onSubmit={Alunos}>
-
-          <FormLabel>Name</FormLabel>
-          <FormInput type='text' onChange={handleChange} name='nome' />
-          <FormLabel>CPF</FormLabel>
-          <FormInput type='text' onChange={handleChange} name='cpf' />
-          <FormLabel>Address</FormLabel>
-          <FormInput type='text' onChange={handleChange} name='endereco' />
-          <FormLabel>State</FormLabel>
-          <FormInput type='text' onChange={handleChange} name='estado' />
-          <FormLabel>Phone</FormLabel>
-          <FormInput type='text' onChange={handleChange} name='telefone' />
-          <FormLabel>Email</FormLabel>
-          <FormInput type='email' onChange={handleChange} name='email' />
-          <FormLabel>Membership</FormLabel>
-          <FormInput type='text' onChange={handleChange} name='plano' />
-          <FormButtonSearch>Save</FormButtonSearch>
+        <Form onSubmit={handlePost}>
+          <FormLabel>Title</FormLabel>
+          <FormInput type="text" name="title" onChange={handleInputChange} />
         </Form>
+
         <LinkEdit to='/register' > List all members </LinkEdit>
       </FormContent>
      
