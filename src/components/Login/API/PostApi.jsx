@@ -104,6 +104,25 @@ function PostApi() {
       <Icon to='/'>The FitTech Gym</Icon>
       <FormContent>
         {/* Login Form */}
+        <Form onSubmit={handleLogin}>
+            <FormLabel>Email:</FormLabel>
+            <FormInput
+              type='email'
+              name='email'
+              value={loginData.email}
+              onChange={(e) => setLoginData({ ...loginData, email: e.target.value })}
+            />
+            <FormLabel>Password:</FormLabel>
+            <FormInput
+              type='password'
+              name='password'
+              value={loginData.password}
+              onChange={(e) => setLoginData({ ...loginData, password: e.target.value })}
+            />
+            <FormButton onClick={handleLogin}>Login</FormButton>
+          </Form>
+
+          
         <Form onSubmit={handlePost}>
           <FormLabel>Title</FormLabel>
           <FormInput type="text" name="title" onChange={handleInputChange} />
