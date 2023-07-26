@@ -60,16 +60,6 @@ Contributions are always welcome! Please fork this repository and create pull re
 
 # License 
 
-The FitTech Gym Management System is open-source and distributed under the MIT License. Feel free to use, modify, and distribute the code for your own projects. Attribution to the original authors is appreciated but not required.
+The FitTech Gym Management System is open-source and distributed under the https://opensource.org/license/mit/ . Feel free to use, modify, and distribute the code for your own projects. Attribution to the original authors is appreciated but not required.
 
-## Como executar?
-Clone o projeto.
-Execute o comando "npm install" para instalar as dependências necessárias.
-Inserir no terminal o comando "npm start".
-
-## Responsáveis pelo projeto:
-
-- [Larissa Silva](https://github.com/LariCostaSilva)
-- [Murilo Rodrigues](https://github.com/muridev017) 
-- [Nathalie Moreira](https://github.com/NathalieMS)
-- [Yasmin Reis](https://github.com/yasminreisk)
+## Deployment site
