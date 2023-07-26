@@ -58,15 +58,9 @@ Future plans for the FitTech Gym Management System include:
 
 Contributions are always welcome! Please fork this repository and create pull requests if you have any suggestions. We value your feedback and collaboration.
 
-## Rotas da API:
+# License 
 
-| Método | Rota | Funcionalidade |
-| ------ | ----- | ----------- |
-| **GET** | `http://localhost:3000/alunos` | Gets em todos|
-| **GET** | `http://localhost:3000/alunos/{id}` | Gets em alunos por {id} |
-| **POST** | `http://localhost:3000/alunos` | Entrada de novo aluno |
-| **PUT** | `http://localhost:3000/alunos/{id}` | Alterações por {id} |
-| **DELETE** | `http://localhost:3000/alunos/{id}` | Deleção de alunos {id} |
+The FitTech Gym Management System is open-source and distributed under the MIT License. Feel free to use, modify, and distribute the code for your own projects. Attribution to the original authors is appreciated but not required.
 
 ## Como executar?
 Clone o projeto.
