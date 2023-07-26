@@ -27,7 +27,7 @@ function ReqApi() {
   useEffect(() => {
     fetchmemberships();
   }, []);
-  
+
   const fetchmemberships = () => {
     Axios.get('http://localhost:9292/memberships')
     .then((response) => {
@@ -40,7 +40,9 @@ function ReqApi() {
     });
   };
 
-  //space for implementing other CRUD operations
+  const handleEdit = (id) => {
+    setEditingMembership(id);
+  };
 
 
 
