@@ -37,35 +37,49 @@ function PostApi() {
       password: '',
     });
 
- const handleInputChange = (e) => {
-  const { name, value } = e.target;
-  setData({
-    ...data,
-    [name]: value,
-  });
- };
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setData({
+      ...data,
+      [name]: value,
+    });
+  };
 
 
 
- const handlePost = (e) => {
-  e.preventDefault();
-  fetch('http://localhost:3000/post', {
-    method: 'POST',
-    body: JSON.stringify(data),
-    headers: {
-      'content-Type': 'application/json',
-    },
-  })
-  .then((response) => response.json())
-  .then((createdPost) => {
-    console.log('New post created:', createdPost);
-    //update the frontend to perform logic if the post is created
-  })
-  .catch((error) => {
-    console.error('Error creating new post:', error);
-    //handle error if the post creation fails
-  });
- };
+  const handlePost = (e) => {
+    e.preventDefault();
+    fetch('http://localhost:3000/post', {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+        'content-Type': 'application/json',
+      },
+    })
+    .then((response) => response.json())
+    .then((createdPost) => {
+      console.log('New post created:', createdPost);
+      //update the frontend to perform logic if the post is created
+    })
+    .catch((error) => {
+      console.error('Error creating new post:', error);
+      //handle error if the post creation fails
+    });
+  };
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    // Send login data to the backend for authentication
+    Axios.post('http://localhost:3000/login', loginData)
+      .then((response) => {
+        console.log('Login success:', response.data);
+        // Handle successful login, e.g., set authentication state or redirect to dashboard
+      })
+      .catch((error) => {
+        console.error('Login failed:', error);
+        // Handle login error, e.g., display an error message
+      });
+  };
 
 
 
