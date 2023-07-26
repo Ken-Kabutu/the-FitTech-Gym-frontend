@@ -25,7 +25,7 @@ FitTech Gym Management System offers a user-friendly interface for gym members a
 3. Posts and Updates: Staff can create and publish informative posts and updates related to fitness and health.
 4. User Management: Staff can manage user data, including updating user information and deleting user accounts.
 
-### `npm run build`
+## Technologies Used
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
