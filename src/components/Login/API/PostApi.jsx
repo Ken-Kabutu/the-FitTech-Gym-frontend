@@ -11,7 +11,8 @@ import {
   FormInput,
   FormLabel,
   EditButton,
-  FormButtonSearch
+  FormButtonSearch,
+  LinkEdit
 } from './StyledComponents'
 
 
