@@ -1,6 +1,6 @@
 # The FitTech Gym Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+FitTech Gym management system is a modern fitness application that combines technology and science to provide users with a personalized fitness experience.
 
 ## Available Scripts
 
