@@ -2,9 +2,9 @@
 
 FitTech Gym management system is a modern fitness application that combines technology and science to provide users with a personalized fitness experience.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+
 
 ### `npm start`
 
