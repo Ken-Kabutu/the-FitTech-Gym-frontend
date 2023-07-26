@@ -16,7 +16,7 @@ FitTech Gym management system is a modern fitness application that combines tech
 4. Start the development server with npm start.
 5. Access the application in your web browser at http://localhost:3000.
 
-### `npm test`
+## Usage
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
