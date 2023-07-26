@@ -54,7 +54,21 @@ return (
       {isLoading ? (
         <Loading />
       ) : (
-        memberships.map
+        memberships.map((membership) => (
+          <Form key={membership.id}>
+            <FormLabel>Plan Name:</FormLabel>
+            <FormEditInput>
+              <FormInput
+                type="text"
+                name="plan_name"
+                value={membership.plan_name}
+                onChange={(e) => handleEdit(membership.id)}
+                disabled={/*set to true or false based on editing state*/}
+              />
+            </FormEditInput>  
+
+          </Form>
+        ))
       )
       
 
