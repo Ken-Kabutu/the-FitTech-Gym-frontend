@@ -63,7 +63,7 @@ return (
                 name="plan_name"
                 value={membership.plan_name}
                 onChange={(e) => handleEdit(membership.id)}
-                disabled={/*set to true or false based on editing state*/}
+                // disabled={ /* set to true or false based on editing state */ }
               />
               <EditButton onClick={() => handleEdit(membership.id)}>
                 <BsPencilSquare />
@@ -77,9 +77,10 @@ return (
 
           </Form>
         ))
-      )
-      
-
+      )}
+      <Link to="/post">
+        <FormButtonSearch>Create New Post</FormButtonSearch>
+      </Link>
     </FormContent>
   </FormWrap>
   </Container>
