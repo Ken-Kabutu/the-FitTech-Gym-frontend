@@ -22,10 +22,12 @@ import { BsPencilSquare } from "react-icons/bs";
 function ReqApi() {
   const [memberships, setMemberships] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [editingMembership, setEditingMembership] = useState(null);
 
   useEffect(() => {
     fetchmemberships();
   }, []);
+  
   const fetchmemberships = () => {
     Axios.get('http://localhost:9292/memberships')
     .then((response) => {
