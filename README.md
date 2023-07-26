@@ -54,23 +54,9 @@ Future plans for the FitTech Gym Management System include:
 
 4. Multi-Language Support: Offering support for multiple languages to cater to a diverse user base.
 
-## Dependências Gerais:
-```js
- "dependencies": {
-    "axios": "^0.24.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-icons": "^4.3.1",
-    "react-modules": "^1.0.8",
-    "react-router": "^6.2.1",
-    "react-router-dom": "^6.2.1",
-    "react-scripts": "^5.0.0",
-    "react-scroll": "^1.8.4",
-    "react-use-effect": "^0.0.1",
-    "styled-components": "^5.3.3",
-    "web-vitals": "^2.1.2"
-  }
-```
+# Contributing
+
+Contributions are always welcome! Please fork this repository and create pull requests if you have any suggestions. We value your feedback and collaboration.
 
 ## Rotas da API:
 
