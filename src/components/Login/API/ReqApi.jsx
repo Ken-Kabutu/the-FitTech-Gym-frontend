@@ -25,7 +25,7 @@ function ReqApi() {
   const [editingMembership, setEditingMembership] = useState(null);
 
   useEffect(() => {
-    fetchmemberships();
+    fetchMemberships();
   }, []);
 
   const fetchMemberships = () => {

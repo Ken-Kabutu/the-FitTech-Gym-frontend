@@ -24,7 +24,11 @@ function PostApi() {
   user_id: 1, //we can replace with actual user_id of logged in user
   });
 
-
+  //state for handling login
+  const [loginData, setLoginData] = useState({
+    email: '',
+    password:'',
+  });
 
  const handleInputChange = (e) => {
   const { name, value } = e.target;
@@ -72,7 +76,8 @@ function PostApi() {
           <FormButtonSearch type='submit'>Create Post</FormButtonSearch>
         </Form>
 
-        <LinkEdit to='/memberships' > List all members </LinkEdit>
+        <LinkEdit to='/memberships' > List all members</LinkEdit>
+        //check whether to render view memberships or list all members
       </FormContent>
      
     </FormWrap>
