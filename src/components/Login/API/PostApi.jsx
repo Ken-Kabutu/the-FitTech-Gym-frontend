@@ -20,6 +20,8 @@ function PostApi() {
 
   const [data, setData] = useState({
   title: '',
+  content: '',
+  user_id: 1, //we can replace with actual user_id of logged in user
   });
 
 
