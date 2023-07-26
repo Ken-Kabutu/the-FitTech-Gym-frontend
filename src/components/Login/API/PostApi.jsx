@@ -30,12 +30,12 @@ function PostApi() {
     password:'',
   });
 
-    // State for handling user registration
-    const [registrationData, setRegistrationData] = useState({
-      name: '',
-      email: '',
-      password: '',
-    });
+    // // State for handling user registration
+    // const [registrationData, setRegistrationData] = useState({
+    //   name: '',
+    //   email: '',
+    //   password: '',
+    // });
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -83,19 +83,19 @@ function PostApi() {
   };
 
 
-  const handleRegistration = (e) => {
-    e.preventDefault();
-    // Send registration data to the backend for user registration
-    Axios.post('http://localhost:3000/register', registrationData)
-      .then((response) => {
-        console.log('Registration success:', response.data);
-        // Handle successful registration
-      })
-      .catch((error) => {
-        console.error('Registration failed:', error);
-        // Handle registration error
-      });
-  };
+  // const handleRegistration = (e) => {
+  //   e.preventDefault();
+  //   // Send registration data to the backend for user registration
+  //   Axios.post('http://localhost:3000/register', registrationData)
+  //     .then((response) => {
+  //       console.log('Registration success:', response.data);
+  //       // Handle successful registration
+  //     })
+  //     .catch((error) => {
+  //       console.error('Registration failed:', error);
+  //       // Handle registration error
+  //     });
+  // };
 
 
 
@@ -122,7 +122,7 @@ function PostApi() {
             <FormButton onClick={handleLogin}>Login</FormButton>
         </Form>
 
-          {/* Registration Form */}
+          {/* Registration Form
         <Form onSubmit={handleRegistration}>
             <FormLabel>Name:</FormLabel>
             <FormInput
@@ -148,7 +148,7 @@ function PostApi() {
               }
             />
             <FormButton onClick={handleRegistration}>Register</FormButton>
-        </Form>
+        </Form> */}
 
 
         <Form onSubmit={handlePost}>
