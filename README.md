@@ -28,6 +28,9 @@ FitTech Gym Management System offers a user-friendly interface for gym members a
 ## Technologies Used
 
 * React.js for frontend development.
+* Axios for making HTTP requests to the backend API.
+* Styled Components for styling the UI.
+* Ruby ActiveRecords with Sinatra for the backend API.
 
 # PROJETO FINAL: API Academia
 
