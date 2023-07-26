@@ -1,4 +1,4 @@
-import React, { useState} from 'react'
+import React, { useState, useEffect } from 'react'
 import Axios from 'axios'
 import {Link} from 'react-router-dom'
 import {
@@ -18,89 +18,23 @@ import {
 import { Loading } from './Loading'
 import { BsPencilSquare } from "react-icons/bs";
  
-// import './Api.scss'
- 
+
 function ReqApi() {
-  const [alunos, setAlunos] = useState([])
-  // estados de disabled
-  const [disabledNome, setDisabledNome] = useState(true)
-  const [disabledCPF, setDisabledCPF] = useState(true)
-  const [disabledEndereco, setDisabledEndereco] = useState(true)
-  const [disabledEstado, setDisabledEstado] = useState(true)
-  const [disabledTelefone, setDisabledTelefone] = useState(true)
-  const [disabledEmail, setDisabledEmail] = useState(true)
-  const [disabledPlano, setDisabledPlano] = useState(true)
- 
-  const [data, setData] = useState({
-    nome: '',
-    cpf: '',
-    endereco: '',
-    estado: '',
-    telefone: '',
-    email: '',
-    plano: ''
-  });
-
-
-  // estados de campos
-  // const [name, setName] = useState('')
-  // const [cpf, setCpf] = useState('')
-  // const [address, setAddress] = useState('')
-  // const [state, setState] = useState('')
-  // const [phone, setPhone] = useState('')
-  // const [plan, setEmail] = useState('')
-  // const [email, setPlan] = useState('')
- 
- 
- 
-  const Alunos = () => {
-    setIsLoading(false);
-    Axios.get("https://api-academia-alunos.herokuapp.com/alunos").then((response) => {
-      setAlunos(response.data.alunos);
-      setIsLoading(true);
-    }
-    )
-  }
- 
-  const DelApi = (id) =>{
-    Axios.delete(`https://api-academia-alunos.herokuapp.com/alunos/${id}`).then (() =>{
-      Alunos ()
-    })
-  }
- 
-  const PutApi = (id) =>{
-    Axios.put(`https://api-academia-alunos.herokuapp.com/alunos/${id}`,
-    data 
-  , {'Content-Type': 'application/json'}).then (() =>{
-      Alunos ()
-    })
-  }
- 
+  const [memberships, setMemberships] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  const handleChange = ({target: {value, name}}) => {
+  useEffect(() => {
+    fetchmemberships();
+  }, []);
+  
+}
 
-          setData({
-            ...data, [name]: value,
-          });
-      }
 
-  // function handleChange({target: { name, value }}) {
-  //   if(name === 'name') setName(value)
-  //   if(name === 'cpf') setCpf(value)
-  //   if(name === 'adress') setAddress(value)
-  //   if(name === 'state') setState(value)
-  //   if(name === 'phone') setPhone(value)
-  //   if(name === 'email') setEmail(value)
-  //   if(name === 'plan') setPlan(value)
-  // }
-
-  console.log(alunos)
 return (
  
   <Container>
   <FormWrap>
-      <Icon to='/'>GymTech</Icon>
+      <Icon to='/'>The FitTech Gym</Icon>
  
     <FormContent>
 
@@ -218,7 +152,7 @@ return (
   </Container>
 
   );
-    }
+    
  
 export default ReqApi;
 /* att */
