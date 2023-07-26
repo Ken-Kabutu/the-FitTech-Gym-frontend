@@ -68,9 +68,11 @@ function PostApi() {
           <FormInput type="text" name="title" onChange={handleInputChange} />
           <FormLabel>Content</FormLabel>
           <FormInput type="text" name="content" onChange={handleInputChange} />
+          //incase of other form fields
+          <FormButtonSearch type='submit'>Create Post</FormButtonSearch>
         </Form>
 
-        <LinkEdit to='/register' > List all members </LinkEdit>
+        <LinkEdit to='/memberships' > List all members </LinkEdit>
       </FormContent>
      
     </FormWrap>
