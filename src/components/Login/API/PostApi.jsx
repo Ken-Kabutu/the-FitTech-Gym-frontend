@@ -66,6 +66,8 @@ function PostApi() {
         <Form onSubmit={handlePost}>
           <FormLabel>Title</FormLabel>
           <FormInput type="text" name="title" onChange={handleInputChange} />
+          <FormLabel>Content</FormLabel>
+          <FormInput type="text" name="content" onChange={handleInputChange} />
         </Form>
 
         <LinkEdit to='/register' > List all members </LinkEdit>
