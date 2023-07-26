@@ -41,9 +41,10 @@ The backend API provides the following endpoints:
 * '/memberships' GET, POST, DELETE
 * '/posts' GET, POST, DELETE
 
-## Descrição do projeto:
 
-Este é o projeto final do curso de desenvolvimento full-stack da Resilia. Utilizamos o atributo "Alunos" para fazer a parte front-end desse projeto, onde o funcionário da Academia pode acessar os alunos a partir do CRUD.
+## Future Plans
+
+Future plans for the FitTech Gym Management System include:
 
 ## Dependências Gerais:
 ```js
