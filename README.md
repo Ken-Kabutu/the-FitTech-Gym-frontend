@@ -4,7 +4,7 @@ FitTech Gym management system is a modern fitness application that combines tech
 
 ## Features
 
-
+* CRUD (Create, Read, Update, Delete) operations for managing users, memberships, and posts.
 
 ### `npm start`
 
