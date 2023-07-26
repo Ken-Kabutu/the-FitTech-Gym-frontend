@@ -35,7 +35,9 @@ FitTech Gym Management System offers a user-friendly interface for gym members a
 
 # API Endpoints
 
+The backend API provides the following endpoints:
 
+* '/users' GET, POST, DELETE
 
 ## Descrição do projeto:
 
