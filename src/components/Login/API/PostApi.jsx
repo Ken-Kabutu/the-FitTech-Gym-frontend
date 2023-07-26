@@ -82,6 +82,21 @@ function PostApi() {
   };
 
 
+  const handleRegistration = (e) => {
+    e.preventDefault();
+    // Send registration data to the backend for user registration
+    Axios.post('http://localhost:3000/register', registrationData)
+      .then((response) => {
+        console.log('Registration success:', response.data);
+        // Handle successful registration, e.g., display a success message or redirect to login page
+      })
+      .catch((error) => {
+        console.error('Registration failed:', error);
+        // Handle registration error, e.g., display an error message
+      });
+  };
+
+
 
   return (<Container>
     <FormWrap>
