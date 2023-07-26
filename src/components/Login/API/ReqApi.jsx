@@ -77,7 +77,7 @@ return (
  
     <FormContent>
 
-      <FormButtonSearch onClick={fetchmemberships}>List all memberships:</FormButtonSearch>
+      <FormButtonSearch onClick={fetchMemberships}>List all memberships:</FormButtonSearch>
       {isLoading ? (
         <Loading />
       ) : (
@@ -90,7 +90,7 @@ return (
                 name="plan_name"
                 value={membership.plan_name}
                 onChange={(e) => handleEdit(membership.id)}
-                // disabled={ /* set to true or false based on editing state */ }
+                disabled={editingMembership !== membership.id}
               />
               <EditButton onClick={() => handleEdit(membership.id)}>
                 <BsPencilSquare />
