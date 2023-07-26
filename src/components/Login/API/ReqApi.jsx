@@ -71,8 +71,9 @@ return (
             </FormEditInput> 
 
             //space to add other input fields
-            
-             
+
+             <FormButton onClick={() => handleDelete(membership.id)}>Delete membership</FormButton>
+             <FormButton onClick={() => handleUpdate(membership.id)}>Reset membership</FormButton>
 
           </Form>
         ))
