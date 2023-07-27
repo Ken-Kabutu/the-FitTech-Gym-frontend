@@ -21,7 +21,7 @@ function PostApi() {
   const [data, setData] = useState({
   title: '',
   content: '',
-  user_id: 1, /* we can replace with actual user_id of logged in user */
+  user_id: 1
   });
 
   /* state for handling login */
@@ -44,17 +44,22 @@ function PostApi() {
       [name]: value,
     });
   };
+  console.log(`this is ${data}`);
 
 
 
 const handlePost = (e) => {
   e.preventDefault();
-  const data = {}; // Replace this with the data you want to send in the POST request
+  // const data = {}; 
 
   Axios.post('http://localhost:9292/posts', data)
     .then((response) => {
       console.log('New post created:', response.data);
       // Update the frontend to perform logic if the post is created
+      setData({
+        title: '',
+        content: '',
+      })
     })
     .catch((error) => {
       console.error('Error creating new post:', error);
