@@ -47,30 +47,28 @@ function PostApi() {
 
 
 
-  const handlePost = (e) => {
-    e.preventDefault();
-    fetch('http://localhost:3000/post', {
-      method: 'POST',
-      body: JSON.stringify(data),
-      headers: {
-        'content-Type': 'application/json',
-      },
-    })
-    .then((response) => response.json())
-    .then((createdPost) => {
-      console.log('New post created:', createdPost);
-      //update the frontend to perform logic if the post is created
+  import axios from 'axios';
+
+const handlePost = (e) => {
+  e.preventDefault();
+  const data = {}; // Replace this with the data you want to send in the POST request
+
+  axios.post('http://localhost:9292/posts', data)
+    .then((response) => {
+      console.log('New post created:', response.data);
+      // Update the frontend to perform logic if the post is created
     })
     .catch((error) => {
       console.error('Error creating new post:', error);
-      //handle error if the post creation fails
+      // Handle error if the post creation fails
     });
-  };
+};
+
 
   const handleLogin = (e) => {
     e.preventDefault();
     // Send login data to the backend for authentication
-    Axios.post('http://localhost:3000/login', loginData)
+    Axios.post('http://localhost:9292/login', loginData)
       .then((response) => {
         console.log('Login success:', response.data);
         // Handle successful login
