@@ -66,7 +66,7 @@ const handlePost = (e) => {
   const handleLogin = (e) => {
     e.preventDefault();
     // Send login data to the backend for authentication
-    Axios.post('http://localhost:9292/login', loginData)
+    Axios.post('http://localhost:9292/users', loginData)
       .then((response) => {
         console.log('Login success:', response.data);
         // Handle successful login
