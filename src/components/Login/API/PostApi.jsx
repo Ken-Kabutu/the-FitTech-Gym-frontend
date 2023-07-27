@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Axios } from 'axios';
+import  Axios  from 'axios';
 import {
   Container,
   FormWrap,
@@ -21,21 +21,21 @@ function PostApi() {
   const [data, setData] = useState({
   title: '',
   content: '',
-  user_id: 1, //we can replace with actual user_id of logged in user
+  user_id: 1, /* we can replace with actual user_id of logged in user */
   });
 
-  //state for handling login
+  /* state for handling login */
   const [loginData, setLoginData] = useState({
     email: '',
     password:'',
   });
 
-    // // State for handling user registration
-    // const [registrationData, setRegistrationData] = useState({
-    //   name: '',
-    //   email: '',
-    //   password: '',
-    // });
+    {/* // State for handling user registration
+    const [registrationData, setRegistrationData] = useState({
+      name: '',
+      email: '',
+      password: '',
+    }); */}
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -47,13 +47,11 @@ function PostApi() {
 
 
 
-  import axios from 'axios';
-
 const handlePost = (e) => {
   e.preventDefault();
   const data = {}; // Replace this with the data you want to send in the POST request
 
-  axios.post('http://localhost:9292/posts', data)
+  Axios.post('http://localhost:9292/posts', data)
     .then((response) => {
       console.log('New post created:', response.data);
       // Update the frontend to perform logic if the post is created
@@ -81,19 +79,19 @@ const handlePost = (e) => {
   };
 
 
-  // const handleRegistration = (e) => {
-  //   e.preventDefault();
-  //   // Send registration data to the backend for user registration
-  //   Axios.post('http://localhost:3000/register', registrationData)
-  //     .then((response) => {
-  //       console.log('Registration success:', response.data);
-  //       // Handle successful registration
-  //     })
-  //     .catch((error) => {
-  //       console.error('Registration failed:', error);
-  //       // Handle registration error
-  //     });
-  // };
+  {/* const handleRegistration = (e) => {
+    e.preventDefault();
+    // Send registration data to the backend for user registration
+    Axios.post('http://localhost:3000/register', registrationData)
+      .then((response) => {
+        console.log('Registration success:', response.data);
+        // Handle successful registration
+      })
+      .catch((error) => {
+        console.error('Registration failed:', error);
+        // Handle registration error
+      });
+  }; */}
 
 
 
@@ -146,7 +144,7 @@ const handlePost = (e) => {
               }
             />
             <FormButton onClick={handleRegistration}>Register</FormButton>
-        </Form> */}
+        </Form> */} 
 
 
         <Form onSubmit={handlePost}>
@@ -158,8 +156,8 @@ const handlePost = (e) => {
           <FormButtonSearch type='submit'>Create Post</FormButtonSearch>
         </Form>
 
-        <LinkEdit to='/memberships' > List all members</LinkEdit>
-        //check whether to render view memberships or list all members
+        {/* <LinkEdit to='/memberships' > List all members</LinkEdit>
+        //check whether to render view memberships or list all members */}
       </FormContent>
      
     </FormWrap>
